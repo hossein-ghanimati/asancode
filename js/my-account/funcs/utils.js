@@ -1,8 +1,8 @@
 import { getToken, getUrlParam } from "../../funcs/utils.js";
 import { uploadTicket } from "./shared.js";
 
-const mainUrl = 'http://localhost:4000/v1';
-const coversMainUrl = "http://localhost:4000";
+const mainUrl = 'https://asancode-backend/v1';
+const coversMainUrl = "https://asancode-backend";
 
 const getOrders = async () => {
     let getReq = await fetch(`${mainUrl}/orders`, {

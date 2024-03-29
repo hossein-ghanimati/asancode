@@ -13,8 +13,8 @@ import { generateOrdersTdTemplate,
      generateUserTicketTemplate,
      getTicketAnswerInfo
 } from "./utils.js"
-const mainUrl = 'http://localhost:4000/v1';
-const coversMainUrl = "http://localhost:4000";
+const mainUrl = 'https://asancode-backend/v1';
+const coversMainUrl = "https://asancode-backend";
 
 
 const renderUserInfo = async () => {
