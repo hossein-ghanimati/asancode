@@ -30,7 +30,7 @@ const landingCountHandler = async () => {
   const coursesCountElem = document.querySelector("#courses-count");
   const coursesMinutesElem = document.querySelector("#courses-minutes");
   let landingInfos = await getLandingInfos();
-
+  console.log("Landing Infos => ", landingInfos)
   // let siteUsersCount = 10_445;
   // let siteCoursesCount = 34;
   // let siteCoursesMinutes = 31_320;
@@ -47,8 +47,8 @@ const landingCountHandler = async () => {
   function landingCountsRender(max, el, sec, minZ) {
     el.innerHTML = Math.ceil(max * minZ);
     
-    let counterInterval = setInterval(() => {
-      if (+el.innerText > max) {
+    let counterInterval = +el.innerText >= max || setInterval(() => {
+      if (+el.innerText >= max - 1) {
         clearInterval(counterInterval);
       }
       el.innerText = +el.innerText + 1;
