@@ -1,8 +1,8 @@
 import { getToken, getUrlParam } from "../../funcs/utils.js";
 import { uploadTicket } from "./shared.js";
 
-const mainUrl = 'https://asancode-backend/v1';
-const coversMainUrl = "https://asancode-backend";
+const mainUrl = 'https://asancode-backend.liara.run/v1';
+const coversMainUrl = "https://asancode-backend.liara.run";
 
 const getOrders = async () => {
     let getReq = await fetch(`${mainUrl}/orders`, {

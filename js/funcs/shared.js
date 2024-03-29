@@ -41,8 +41,8 @@ import { setPanelLink,
 
 
 
-const mainUrl = 'https://asancode-backend/v1';
-const coversMainUrl = "https://asancode-backend";
+const mainUrl = 'https://asancode-backend.liara.run/v1';
+const coversMainUrl = "https://asancode-backend.liara.run";
 
 
 
