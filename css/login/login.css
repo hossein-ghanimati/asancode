@@ -224,4 +224,8 @@ input:-internal-autofill-selected{
     color: var(--text-color) !important;
 }
 
+.phone{
+    display: none;
+}
+
 

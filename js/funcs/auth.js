@@ -27,19 +27,17 @@ const register = () => {
   const inputs = document.querySelectorAll(".inputs-input");
 
   const name = document.querySelector("#name");
-  const username = document.querySelector("#username");
   const email = document.querySelector("#email");
   const phone = document.querySelector("#phone");
   const password = document.querySelector("#register-password");
-  const confirmPassword = document.querySelector("#confirmPassword");
 
   let userData = {
     name: name.value.trim(),
-    username: username.value.trim(),
+    username: name.value.trim(),
     email: email.value.trim(),
     phone: phone.value.trim(),
     password: password.value.trim(),
-    confirmPassword: confirmPassword.value.trim(),
+    confirmPassword: password.value.trim(),
   };
 
   fetch(`${mainUrl}/auth/register`, {
