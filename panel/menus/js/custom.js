@@ -3,5 +3,5 @@ import {readyMenuParentItem } from '../../../js/panel/funcs/utils.js'
 renderMenuItemsInPanel();
 await loadMenuParentItems();
 readyMenuParentItem();
-
+console.log("ad");
 window.uploadNewMenuItem = uploadNewMenuItem

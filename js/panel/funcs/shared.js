@@ -151,7 +151,7 @@ const renderMenuItemsInPanel = async () => {
   menuItemsWrapper.innerHTML = ''
   let allMenuItems = await getAllMenuItems();
   
-  allMenuItems.forEach((menuItem, index) => {
+  allMenuItems && allMenuItems.forEach((menuItem, index) => {
     menuItemsWrapper.insertAdjacentHTML('beforeend', generatePanelMenuItemTemplate(menuItem, index))
   })
 
@@ -166,7 +166,7 @@ const loadMenuParentItems = async () => {
   `)
   let menuParentItems = await getMenuItems();
 
-  menuParentItems.forEach((parentItem => {
+  menuParentItems?.length && menuParentItems.forEach((parentItem => {
     menuParentItemsWrapper.insertAdjacentHTML('beforeend', `
       <option value='${parentItem._id}'>
         ${parentItem.title}
