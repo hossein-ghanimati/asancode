@@ -1,7 +1,7 @@
 const articleBodyEditor = await ClassicEditor.create(document.querySelector("#editor"), {
   language: "fa",
 })
-const mainUrl = "https://asancode-backend.liara.run/v1";
+const mainUrl = "http://localhost:4000/v1";
 import { getToken, showToastSwal } from "../../../js/funcs/utils.js";
 import { renderArticles, loadCategories } from "../../../js/panel/funcs/shared.js";
 import { readyCourseCategory } from "../../../js/panel/funcs/utils.js";

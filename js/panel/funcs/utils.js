@@ -16,8 +16,8 @@ import {
   renderDiscountCodes,
   renderPanelTickets,
 } from "./shared.js";
-const coversMainUrl = "https://asancode-backend.liara.run";
-const mainUrl = "https://asancode-backend.liara.run/v1";
+const coversMainUrl = "http://localhost:4000";
+const mainUrl = "http://localhost:4000/v1";
 
 function removeNotif(notifId) {
   document.getElementById(notifId).remove();

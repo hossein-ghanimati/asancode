@@ -1,5 +1,5 @@
-const coversMainUrl = "https://asancode-backend.liara.run";
-const mainUrl = "https://asancode-backend.liara.run/v1";
+const coversMainUrl = "http://localhost:4000";
+const mainUrl = "http://localhost:4000/v1";
 import { showLoader, hideLoader } from "../../funcs/handlers/loadin-handler.js";
 
 import { getFromLocal, showToastSwal, showSwal, getMenuItems } from "../../funcs/utils.js";
