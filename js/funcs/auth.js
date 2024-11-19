@@ -1,5 +1,5 @@
 import { showSwal, showToastSwal, setIntoLocal, getToken } from "./utils.js";
-const mainUrl = 'http://localhost:4000/v1'
+const mainUrl = 'https://sabzlearnsite-backend.liara.run/v1'
 
 const getMe = async () => {
   let token = getToken();
