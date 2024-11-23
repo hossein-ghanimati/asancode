@@ -11,7 +11,7 @@
 
 
 <h2 align="center">
-  <a href="https://hossein-ghanimati.github.io/divar/"><img src="https://img.shields.io/badge/See%20Demo-8A2BE2" /></a>
+  <a href="https://hossein-ghanimati.github.io/asancode/"><img src="https://img.shields.io/badge/See%20Demo-8A2BE2" /></a>
 </h2>
 
 
@@ -49,12 +49,3 @@
   <br>
   <img src="https://github.com/hossein-ghanimati/asancode/blob/main/project-demo/demo-5.png?raw=true" />
 </p>
-
-
-<br/>
-<br/>
-
-
-<h2 align="center">
-  <a href="https://hossein-ghanimati.github.io/asancode/"><img src="https://img.shields.io/badge/See%20Demo-8A2BE2" /></a>
-</h2>
