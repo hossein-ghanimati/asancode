@@ -336,7 +336,8 @@ const getMenuItems = async () => {
   if (user.userInfo.role === "ADMIN") {
     menuItems.push({
       title: "پنل مدیریت",
-      href: "./panel/main"
+      href: "./panel/main",
+      submenus: []
     })
   }
   return menuItems
