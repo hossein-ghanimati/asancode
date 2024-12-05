@@ -201,7 +201,7 @@ const generateNavMenuItemTemplate = (menuItem) => {
     menuItem.title
   }</a> 
   ${
-    menuItem.submenus.length
+    menuItem?.submenus.length
       ? `<i class="fas fa-angle-down"></i>
 
       <ul class="navbar__dropdown-menu">
@@ -332,6 +332,13 @@ const getCourseInfos = async () => {
 const getMenuItems = async () => {
   let getMenuItemsReq = await fetch(`${mainUrl}/menus`);
   let menuItems = await getMenuItemsReq.json();
+  let user = getFromLocal("userInfo");
+  if (user.userInfo.role === "ADMIN") {
+    menuItems.push({
+      title: "پنل مدیریت",
+      href: "./panel/main"
+    })
+  }
   return menuItems
 }
 
