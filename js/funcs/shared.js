@@ -41,8 +41,8 @@ import { setPanelLink,
 
 
 
-const mainUrl = 'https://sabzlearnsite-backend.liara.run/v1';
-const coversMainUrl = "https://sabzlearnsite-backend.liara.run";
+const mainUrl = 'https://roocket.liara.run/v1';
+const coversMainUrl = "https://roocket.liara.run";
 
 
 

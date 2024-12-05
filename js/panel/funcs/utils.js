@@ -16,8 +16,8 @@ import {
   renderDiscountCodes,
   renderPanelTickets,
 } from "./shared.js";
-const coversMainUrl = "https://sabzlearnsite-backend.liara.run";
-const mainUrl = "https://sabzlearnsite-backend.liara.run/v1";
+const coversMainUrl = "https://roocket.liara.run";
+const mainUrl = "https://roocket.liara.run/v1";
 
 function removeNotif(notifId) {
   document.getElementById(notifId).remove();
