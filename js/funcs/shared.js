@@ -111,6 +111,23 @@ const renderMenuItems = async () => {
         mobileMenu.insertAdjacentHTML('beforeend', generateMobileMenuItemTemplate(menuItem))
     })
 
+    let user = getFromLocal("userInfo");
+    if (user?.userInfo?.role === "ADMIN") {
+        navbarMenu.insertAdjacentHTML('beforeend', `
+            <li class="navbar__item">
+                <a href="./panel/main" class="navbar__link">
+                    پنل مدیریت
+                </a>
+            </li> 
+        `)
+        mobileMenu.insertAdjacentHTML('beforeend', `
+            <li class="navbar__item">
+                <a href="./panel/main" class="navbar__link">
+                    پنل مدیریت
+                </a>
+            </li> 
+        `)
+    }
 }
 
 

@@ -197,27 +197,27 @@ const generateMobileMenuItemTemplate = (menuItem) => {
 const generateNavMenuItemTemplate = (menuItem) => {
   return `
   <li class="navbar__item">
-  <a href=category.html?cat=${menuItem.href} class="navbar__link">${
-    menuItem.title
-  }</a> 
-  ${
-    menuItem?.submenus.length
-      ? `<i class="fas fa-angle-down"></i>
+    <a href=category.html?cat=${menuItem.href} class="navbar__link">${
+      menuItem.title
+    }</a> 
+    ${
+      menuItem?.submenus?.length
+        ? `<i class="fas fa-angle-down"></i>
 
-      <ul class="navbar__dropdown-menu">
-          ${menuItem.submenus
-            .map(
-              (submenu) => `
-                  <li class="navbar__dropdown-item">
-                      <a href="course.html?name=${submenu.href}" class="navbar__dropdown-link">${submenu.title}</a>
-                  </li>`
-            )
-            .join(" ")}
-      </ul>
-      `
-      : ""
-  }      
-  
+        <ul class="navbar__dropdown-menu">
+            ${menuItem.submenus
+              .map(
+                (submenu) => `
+                    <li class="navbar__dropdown-item">
+                        <a href="course.html?name=${submenu.href}" class="navbar__dropdown-link">${submenu.title}</a>
+                    </li>`
+              )
+              .join(" ")}
+        </ul>
+        `
+        : ""
+    }      
+  </li>
   `;
 };
 
@@ -332,14 +332,7 @@ const getCourseInfos = async () => {
 const getMenuItems = async () => {
   let getMenuItemsReq = await fetch(`${mainUrl}/menus`);
   let menuItems = await getMenuItemsReq.json();
-  let user = getFromLocal("userInfo");
-  if (user.userInfo.role === "ADMIN") {
-    menuItems.push({
-      title: "پنل مدیریت",
-      href: "./panel/main",
-      submenus: []
-    })
-  }
+  
   return menuItems
 }
 

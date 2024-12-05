@@ -63,7 +63,7 @@ const register = () => {
             { accessToken: result.accessToken }
           );
           await getMe();
-          if (isRgisterSuccessSwal) window.location.href = 'my-account/Account';
+          if (isRgisterSuccessSwal) window.location.href = './';
         }
         
       });
@@ -107,7 +107,7 @@ const login = () => {
       );
       setIntoLocal("user", { accessToken: result.accessToken });
       await getMe();
-      window.location.href = 'my-account/Account'
+      window.location.href = './'
     })
     .catch((err) => {
       showToastSwal(
