@@ -1,5 +1,5 @@
-const coversMainUrl = "https://roocket.liara.run";
-const mainUrl = "https://roocket.liara.run/v1";
+const coversMainUrl = "https://academic.liara.run";
+const mainUrl = "https://academic.liara.run/v1";
 import { showLoader, hideLoader } from "../../funcs/handlers/loadin-handler.js";
 
 import { getFromLocal, showToastSwal, showSwal, getMenuItems } from "../../funcs/utils.js";

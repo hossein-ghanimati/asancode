@@ -1,7 +1,7 @@
 const articleBodyEditor = await ClassicEditor.create(document.querySelector("#editor"), {
   language: "fa",
 })
-const mainUrl = "https://roocket.liara.run/v1";
+const mainUrl = "https://academic.liara.run/v1";
 import { getToken, showToastSwal } from "../../../js/funcs/utils.js";
 import { renderArticles, loadCategories } from "../../../js/panel/funcs/shared.js";
 import { readyCourseCategory } from "../../../js/panel/funcs/utils.js";

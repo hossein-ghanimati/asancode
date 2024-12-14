@@ -1,5 +1,5 @@
 import { showSwal, showToastSwal, setIntoLocal, getToken } from "./utils.js";
-const mainUrl = 'https://roocket.liara.run/v1'
+const mainUrl = 'https://academic.liara.run/v1'
 
 const getMe = async () => {
   let token = getToken();
