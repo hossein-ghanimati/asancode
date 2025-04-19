@@ -13,7 +13,7 @@ import { generateOrdersTdTemplate,
      generateUserTicketTemplate,
      getTicketAnswerInfo
 } from "./utils.js"
-const mainUrl = 'https://academic.liara.run/v1';
+const mainUrl = 'https://backend-v4.liara.run/v1';
 const coversMainUrl = "https://academic.liara.run";
 
 

@@ -1,7 +1,7 @@
 import { getToken, getUrlParam } from "../../funcs/utils.js";
 import { uploadTicket } from "./shared.js";
 
-const mainUrl = 'https://academic.liara.run/v1';
+const mainUrl = 'https://backend-v4.liara.run/v1';
 const coversMainUrl = "https://academic.liara.run";
 
 const getOrders = async () => {

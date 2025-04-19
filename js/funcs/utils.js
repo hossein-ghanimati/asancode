@@ -1,6 +1,6 @@
 import { getMe } from "./auth.js";
 const coversMainUrl = "https://academic.liara.run";
-const mainUrl = 'https://academic.liara.run/v1'
+const mainUrl = 'https://backend-v4.liara.run/v1'
 
 const showSwal = (title, text, icon, callback, btnText) => {
   Swal.fire({

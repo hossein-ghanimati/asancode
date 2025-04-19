@@ -17,7 +17,7 @@ import {
   renderPanelTickets,
 } from "./shared.js";
 const coversMainUrl = "https://academic.liara.run";
-const mainUrl = "https://academic.liara.run/v1";
+const mainUrl = "https://backend-v4.liara.run/v1";
 
 function removeNotif(notifId) {
   document.getElementById(notifId).remove();
